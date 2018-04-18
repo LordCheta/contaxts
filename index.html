@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KHONTAT</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section id="left"> 
+            <p id="headingA">CONTAXTS&trade;</p> <span id="addnew" title="Add New Contact">&#10010;</span>
+
+            <!-- <input type="text"  id="search"> -->
+        <div id="displayContacts">
+
+        </div>
+    </section>
+    
+    
+    <section id="right">
+        <form action="" id="createContact" align="center">
+            <!-- <img src="./img/icon.jpg" id="profile-img-tag" /><br><br>
+            <input class="customInput" type="file" id="profile-img" style="display:none">
+            <label for="profile-img" id="input-label">Choose Contact Photo &#9974;</label> -->
+            <br>
+            <input autofocus class="customInput" type="text" id="name" placeholder="Fullname">
+            <p class="errorMsg" id="nameExists"></p>
+            <input class="customInput" type="number" id="phone" placeholder="Phone Number">
+            <p id="phn"></p>
+            <input class="customInput" type="email" id="email" placeholder="Email">
+            <p id="em"></p>
+            <input class="customInput" type="date" id="birthday" placeholder="Birthday">
+            <p id="bd"></p>
+            <input class="customInput" type="text" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+            <p id="ad"></p> 
+             <br>
+
+            <input class="createBtns" type="button" value="CANCEL" id="createCancel"> <input class="createBtns" type="button" value="SAVE" id="createSave">
+
+        </form>
+
+        <section id="showDetails">
+            <div id="options">
+                <span class="optionBtns" id="editContact" title="Edit Contact">&#10002;</span> 
+                <span class="optionBtns" id="deleteContact" title="Delete Contact">&#9986;</span>
+            </div>
+
+            <div id="properties"><br>
+                <!-- <img src="./img/icon.jpg" id="profile-img-tag" /><br> -->
+                <h3 class="titles">NAME</h3>
+                <p class="props" id="showFullname"></p><br>
+
+                <h3 class="titles">EMAIL</h3>
+                <p class="props" id="showEmail"></p><br>
+
+                <h3 class="titles">PHONE NUMBER</h3>
+                <p class="props" id="showPhone"></p><br>
+
+                <h3 class="titles">BIRTHDAY</h3>
+                <p class="props" id="showBday"></p><br>
+
+                <h3 class="titles">ADDRESS</h3>
+                <p class="props" id="showAddress"></p><br>
+            </div> 
+        </section>
+
+        <section id="credits">
+            <div id="innerCredit">
+                <h1 id="appIcon">CONTAXTS&trade;</h1>
+                <P class="authors" style="color:rgb(168, 180, 175);">version 1.0</P><br><br>
+                
+                <p class="authors">MADUABUCHI CHINAECHETAM</p>
+                <p class="authors">@LordCheta</p>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>
